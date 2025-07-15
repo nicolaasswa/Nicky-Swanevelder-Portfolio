@@ -143,10 +143,12 @@ export default function ServicesPage() {
                   <Button
                     variant="outline"
                     className="w-full border-2 border-brand-black text-brand-black hover:bg-brand-yellow bg-transparent mt-6"
-                    onClick={() => handleSmoothScroll("opssync-details")}
+                    asChild
                   >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <Link href="/services/opssync">
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
@@ -204,10 +206,12 @@ export default function ServicesPage() {
                   <Button
                     variant="outline"
                     className="w-full border-2 border-brand-black text-brand-black hover:bg-brand-yellow bg-transparent mt-6"
-                    onClick={() => handleSmoothScroll("partnr-details")}
+                    asChild
                   >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <Link href="/services/partnr">
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
@@ -265,10 +269,12 @@ export default function ServicesPage() {
                   <Button
                     variant="outline"
                     className="w-full border-2 border-brand-black text-brand-black hover:bg-brand-yellow bg-transparent mt-6"
-                    onClick={() => handleSmoothScroll("ignite-details")}
+                    asChild
                   >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <Link href="/services/ignite">
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>

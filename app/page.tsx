@@ -20,6 +20,7 @@ import {
   Calendar,
   Linkedin,
 } from "lucide-react"
+import Link from "next/link"
 
 export default function HomePage() {
   const handleSmoothScroll = (targetId: string) => {
@@ -137,10 +138,12 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   className="w-full border-2 border-brand-black text-brand-black hover:bg-brand-yellow bg-transparent"
-                  onClick={() => (window.location.href = "/services#opssync-details")}
+                  asChild
                 >
-                  Explore OpsSync
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link href="/services/opssync">
+                    Explore OpsSync
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -168,10 +171,12 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   className="w-full border-2 border-brand-black text-brand-black hover:bg-brand-yellow bg-transparent"
-                  onClick={() => (window.location.href = "/services#partnr-details")}
+                  asChild
                 >
-                  Explore Partnr
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link href="/services/partnr">
+                    Explore Partnr
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -199,10 +204,12 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   className="w-full border-2 border-brand-black text-brand-black hover:bg-brand-yellow bg-transparent"
-                  onClick={() => (window.location.href = "/services#ignite-details")}
+                  asChild
                 >
-                  Explore Ignite AI
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link href="/services/ignite">
+                    Explore Ignite AI
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
