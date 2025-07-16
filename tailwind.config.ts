@@ -53,14 +53,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Black Rocket Brand Colors
-        brand: {
-          black: "#000000",
-          white: "#FFFFFF",
-          yellow: "#FFD500",
-          "gray-light": "#F2F2F2",
-          "gray-dark": "#1A1A1A",
-        },
+        "brand-gray-dark": "#1a1a1a",
+        "brand-gray-light": "#cccccc",
+        "brand-yellow": "#ffcc00",
       },
       borderRadius: {
         lg: "var(--radius)",
