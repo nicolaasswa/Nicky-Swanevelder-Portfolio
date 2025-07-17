@@ -1,790 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Black Rocket Consult</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Black Rocket Consult</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation Header (Replicated from index.html) -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/">
-                    <img src="logos/blackrocket-logo.png" alt="Black Rocket Consult" class="logo-img">
-                </a>
-            </div>
-            <div class="nav-links">
-                <a href="services.html" class="nav-link active">Services</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="cta-buttons">
-                <button class="button button-primary get-started-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path></svg>
-                    Get Started
-                </button>
-                <button class="button button-ghost menu-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-                </button>
-            </div>
-        </nav>
-    </header>
+  <!-- Navigation Header (Replicated from index.html) -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">
+          <img src="logos/blackrocket-logo.png" alt="Black Rocket Consult" class="logo-img">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="cta-buttons">
+        <button class="button button-primary get-started-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+            <path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path>
+          </svg>
+          Get Started
+        </button>
+        <button class="button button-ghost menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="section hero-section pt-32">
-        <div class="container">
-            <div class="text-center space-y-8">
-                <div class="space-y-6">
-                    <h1 class="text-5xl lg:text-6xl font-bold text-brand-black leading-tight">
-                        Three Engines. <span class="text-brand-yellow">One Growth Infrastructure</span>.
-                    </h1>
-                    <p class="text-xl text-brand-gray-dark leading-relaxed max-w-4xl mx-auto">
-                        We don't offer services in isolation. We design interconnected systems that drive scale — through
-                        workflows, performance marketing, and AI enablement.
-                    </p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button
-                        class="button button-primary button-lg"
-                        data-scroll-to="services-overview-section"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M12 12v9"></path><path d="M12 3v1"></path><path d="M12 21v-1"></path><path d="M4.22 10.22 5.64 11.64"></path><path d="M2.1 14.1L3.52 15.52"></path><path d="M18.36 11.64 19.78 10.22"></path><path d="M20.48 15.52 21.9 14.1"></path><path d="M10.22 4.22 11.64 5.64"></path><path d="M14.1 2.1 15.52 3.52"></path><path d="M11.64 18.36 10.22 19.78"></path><path d="M15.52 20.48 14.1 21.9"></path></svg>
-                        Explore Our Services
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                    </button>
-                    <button
-                        class="button button-outline button-lg"
-                        data-scroll-to="contact-section"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                        Book Discovery Call
-                    </button>
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <section class="section hero-section pt-32">
+    <div class="container">
+      <div class="text-center space-y-8">
+        <div class="space-y-6">
+          <h1 class="text-5xl lg:text-6xl font-bold text-brand-black leading-tight">
+            Three Engines. <span class="text-yellow">One Growth Infrastructure</span>.
+          </h1>
+          <p class="text-xl text-brand-gray-dark leading-relaxed max-w-4xl mx-auto">
+            We don't offer services in isolation. We design interconnected systems that drive scale — through
+            workflows, performance marketing, and AI enablement.
+          </p>
         </div>
-    </section>
-
-    <!-- Service Overview -->
-    <section id="services-overview-section" class="section bg-brand-gray-light">
-        <div class="container">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-black mb-4">Our Service Ecosystem</h2>
-                <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
-                    Each service works independently, but together they create exponential growth leverage.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- OpsSync -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="mb-4">
-                            <img
-                                src="logos/opssync-logo.png"
-                                alt="OpsSync"
-                                width="150"
-                                height="50"
-                                class="w-[150px] h-auto"
-                            />
-                        </div>
-                        <h3 class="text-2xl text-brand-black">Workflow & Systems Implementation</h3>
-                        <p class="text-lg font-medium text-brand-gray-dark">
-                            Build operational clarity with process design, system integration, and CRM implementation. Whether
-                            you're scaling in HubSpot, Zoho, or Notion — we connect the tools to your business model.
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-4">
-                            <p class="text-brand-gray-dark">
-                                We implement and optimize tools like HubSpot, Zoho, and custom workflows to streamline your pipeline
-                                and automate your operations.
-                            </p>
-                            <div class="space-y-2">
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    CRM setup, automation & optimization
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Workflow mapping & operations audits
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Toolstack alignment (HubSpot, Zoho, Airtable, Notion, etc.)
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Custom dashboards & reporting
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    SOPs & enablement frameworks
-                                </div>
-                            </div>
-                            <p class="text-brand-gray-dark mt-4">
-                                Ideal For: Operations leads, agency owners, founders drowning in manual processes.
-                            </p>
-                            <a href="services/opssync.html" class="button button-outline button-full-width mt-6">
-                                Learn More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Partnr -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="mb-4">
-                            <img
-                                src="logos/partnr-logo.png"
-                                alt="Partnr"
-                                width="150"
-                                height="50"
-                                class="w-[150px] h-auto"
-                            />
-                        </div>
-                        <h3 class="text-2xl text-brand-black">Digital Marketing That Performs</h3>
-                        <p class="text-lg font-medium text-brand-gray-dark">
-                            Marketing isn't magic — it's math, messaging, and momentum. We combine sharp strategy with full-funnel
-                            implementation to attract leads and convert them.
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-4">
-                            <p class="text-brand-gray-dark">
-                                Funnels, automation, and media campaigns that actually convert — fully aligned to your internal
-                                systems and processes.
-                            </p>
-                            <div class="space-y-2">
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Marketing strategy & offer development
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Lead generation funnels & automation
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Email marketing & CRM sequences
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Website messaging & conversion design
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Paid media (optional partnerships)
-                                </div>
-                            </div>
-                            <p class="text-brand-gray-dark mt-4">
-                                Ideal For: B2B service providers, agencies, and experts ready to scale beyond referrals.
-                            </p>
-                            <a href="services/partnr.html" class="button button-outline button-full-width mt-6">
-                                Learn More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ignite AI -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="mb-4">
-                            <img
-                                src="logos/ignite-logo.png"
-                                alt="Ignite AI"
-                                width="150"
-                                height="50"
-                                class="w-[150px] h-auto"
-                            />
-                        </div>
-                        <h3 class="text-2xl text-brand-black">Applied AI for Real-World Productivity</h3>
-                        <p class="text-lg font-medium text-brand-gray-dark">
-                            Forget shiny demos. We implement AI tools where they drive true business value — automating the
-                            repetitive, accelerating the strategic, and enhancing decision-making.
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-4">
-                            <p class="text-brand-gray-dark">
-                                From custom GPTs to AI video to intelligent automation — we build usable AI systems with measurable
-                                business impact.
-                            </p>
-                            <div class="space-y-2">
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    AI workflow design & automation
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    ChatGPT + API use cases for ops/marketing
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Custom GPT & agent deployment
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Internal training & AI adoption strategies
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Prompt engineering & enablement assets
-                                </div>
-                            </div>
-                            <p class="text-brand-gray-dark mt-4">
-                                Ideal For: Companies wanting to integrate AI into operations and move beyond experimentation.
-                            </p>
-                            <a href="services/ignite.html" class="button button-outline button-full-width mt-6">
-                                Learn More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="button button-primary button-lg" data-scroll-to="services-overview-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+              <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
+              <path d="M12 12v9"></path>
+              <path d="M12 3v1"></path>
+              <path d="M12 21v-1"></path>
+              <path d="M4.22 10.22 5.64 11.64"></path>
+              <path d="M2.1 14.1L3.52 15.52"></path>
+              <path d="M18.36 11.64 19.78 10.22"></path>
+              <path d="M20.48 15.52 21.9 14.1"></path>
+              <path d="M10.22 4.22 11.64 5.64"></path>
+              <path d="M14.1 2.1 15.52 3.52"></path>
+              <path d="M11.64 18.36 10.22 19.78"></path>
+              <path d="M15.52 20.48 14.1 21.9"></path>
+            </svg>
+            Explore Our Services
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+          <button class="button button-outline button-lg" data-scroll-to="contact-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+              <line x1="16" x2="16" y1="2" y2="6"></line>
+              <line x1="8" x2="8" y1="2" y2="6"></line>
+              <line x1="3" x2="21" y1="10" y2="10"></line>
+            </svg>
+            Book Discovery Call
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- OpsSync Detailed Section -->
-    <section id="opssync-details-section" class="section bg-brand-white">
-        <div class="container">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="space-y-6">
-                        <div class="mb-4">
-                            <img
-                                src="logos/opssync-logo.png"
-                                alt="OpsSync"
-                                width="200"
-                                height="60"
-                                class="w-[200px] h-auto"
-                            />
-                        </div>
-                        <h2 class="text-4xl font-bold text-brand-black">
-                            Stop Managing. Start <span class="text-brand-yellow">Systemizing</span>.
-                        </h2>
-                        <p class="text-xl text-brand-gray-dark leading-relaxed">
-                            OpsSync transforms your business operations from reactive firefighting into proactive, scalable
-                            systems that work without you.
-                        </p>
-                    </div>
+  <!-- Service Overview -->
+  <section id="services-overview-section" class="section bg-brand-gray-light">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-brand-black mb-4">Our Service Ecosystem</h2>
+        <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
+          Each service works independently, but together they create exponential growth leverage.
+        </p>
+      </div>
 
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M12 12v9"></path><path d="M12 3v1"></path><path d="M12 21v-1"></path><path d="M4.22 10.22 5.64 11.64"></path><path d="M2.1 14.1L3.52 15.52"></path><path d="M18.36 11.64 19.78 10.22"></path><path d="M20.48 15.52 21.9 14.1"></path><path d="M10.22 4.22 11.64 5.64"></path><path d="M14.1 2.1 15.52 3.52"></path><path d="M11.64 18.36 10.22 19.78"></path><path d="M15.52 20.48 14.1 21.9"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">CRM & Pipeline Optimization</h3>
-                                <p class="text-brand-gray-dark">
-                                    We implement and optimize HubSpot, Zoho, or custom CRM solutions that actually get used by your
-                                    team.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><rect width="8" height="8" x="2" y="2" rx="2"></rect><path d="M14 2h8v8h-8z"></path><path d="M14 14h8v8h-8z"></path><path d="M2 14h8v8h-8z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Process Automation</h3>
-                                <p class="text-brand-gray-dark">
-                                    Eliminate manual tasks with intelligent workflows that handle everything from lead routing to
-                                    client onboarding.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M3 3v18h18"></path><path d="M18.7 8.3V18H6.3"></path><path d="m19 4-7 7-3-3-7 7"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Performance Dashboards</h3>
-                                <p class="text-brand-gray-dark">
-                                    Real-time visibility into what's working, what's not, and where your biggest opportunities lie.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="card bg-brand-gray-light">
-                        <div class="card-header">
-                            <h3 class="card-title text-brand-black">OpsSync Results</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="space-y-6">
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">40hrs</div>
-                                    <p class="text-brand-gray-dark">Weekly time savings per team member</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">300%</div>
-                                    <p class="text-brand-gray-dark">Increase in lead conversion rates</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">90%</div>
-                                    <p class="text-brand-gray-dark">Reduction in manual data entry</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- OpsSync -->
+        <div class="card">
+          <div class="card-header">
+            <div class="mb-4">
+              <img src="logos/opssync-logo.png" alt="OpsSync" width="150" height="50" class="w-[150px] h-auto">
             </div>
-        </div>
-    </section>
-
-    <!-- Partnr Detailed Section -->
-    <section id="partnr-details-section" class="section bg-brand-gray-light">
-        <div class="container">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="relative order-2 lg:order-1">
-                    <div class="card bg-brand-white">
-                        <div class="card-header">
-                            <h3 class="card-title text-brand-black">Partnr Impact</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="space-y-6">
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">ZAR 2M+</div>
-                                    <p class="text-brand-gray-dark">Additional annual revenue generated</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">450%</div>
-                                    <p class="text-brand-gray-dark">ROI on marketing spend</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">60%</div>
-                                    <p class="text-brand-gray-dark">Reduction in customer acquisition cost</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space-y-8 order-1 lg:order-2">
-                    <div class="space-y-6">
-                        <div class="mb-4">
-                            <img
-                                src="logos/partnr-logo.png"
-                                alt="Partnr"
-                                width="200"
-                                height="60"
-                                class="w-[200px] h-auto"
-                            />
-                        </div>
-                        <h2 class="text-4xl font-bold text-brand-black">
-                            Marketing That <span class="text-brand-yellow">Actually Converts</span>.
-                        </h2>
-                        <p class="text-xl text-brand-gray-dark leading-relaxed">
-                            Partnr builds marketing systems that integrate seamlessly with your operations, ensuring every lead
-                            becomes a qualified opportunity.
-                        </p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M3 3v18h18"></path><path d="M18.7 8.3V18H6.3"></path><path d="m19 4-7 7-3-3-7 7"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Conversion-Focused Funnels</h3>
-                                <p class="text-brand-gray-dark">
-                                    Landing pages, email sequences, and nurture campaigns designed to move prospects through your
-                                    sales process.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Marketing Automation</h3>
-                                <p class="text-brand-gray-dark">
-                                    Intelligent campaigns that nurture leads, score prospects, and trigger sales actions at the right
-                                    moment.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M12 12v9"></path><path d="M12 3v1"></path><path d="M12 21v-1"></path><path d="M4.22 10.22 5.64 11.64"></path><path d="M2.1 14.1L3.52 15.52"></path><path d="M18.36 11.64 19.78 10.22"></path><path d="M20.48 15.52 21.9 14.1"></path><path d="M10.22 4.22 11.64 5.64"></path><path d="M14.1 2.1 15.52 3.52"></path><path d="M11.64 18.36 10.22 19.78"></path><path d="M15.52 20.48 14.1 21.9"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Performance Media</h3>
-                                <p class="text-brand-gray-dark">
-                                    Paid advertising that's tied to revenue metrics, not vanity metrics. Every rand spent is tracked
-                                    to ROI.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ignite AI Detailed Section -->
-    <section id="ignite-details-section" class="section bg-brand-white">
-        <div class="container">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="space-y-6">
-                        <div class="mb-4">
-                            <img
-                                src="logos/ignite-logo.png"
-                                alt="Ignite AI"
-                                width="200"
-                                height="60"
-                                class="w-[200px] h-auto"
-                            />
-                        </div>
-                        <h2 class="text-4xl font-bold text-brand-black">
-                            AI That <span class="text-brand-yellow">Works</span>, Not Just Wows.
-                        </h2>
-                        <p class="text-xl text-brand-gray-dark leading-relaxed">
-                            Ignite AI cuts through the hype to deliver practical AI solutions that solve real business problems
-                            and generate measurable ROI.
-                        </p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12 8V4H8"></path><path d="M2 14h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2v-7Z"></path><path d="M22 14h-2a2 2 0 0 1-2 2v3a2 2 0 0 1 2 2h2v-7Z"></path><path d="M15 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path><path d="M9 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Custom AI Development</h3>
-                                <p class="text-brand-gray-dark">
-                                    Bespoke AI solutions tailored to your specific business needs, from chatbots to predictive
-                                    analytics.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">AI Content & Media</h3>
-                                <p class="text-brand-gray-dark">
-                                    Automated content creation, AI video production, and intelligent copywriting that maintains your
-                                    brand voice.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0-.73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-brand-black mb-2">Intelligent Automation</h3>
-                                <p class="text-brand-gray-dark">
-                                    AI-powered workflows that make smart decisions, learn from patterns, and optimize themselves over
-                                    time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="card bg-brand-gray-light">
-                        <div class="card-header">
-                            <h3 class="card-title text-brand-black">Ignite AI Outcomes</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="space-y-6">
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">75%</div>
-                                    <p class="text-brand-gray-dark">Reduction in content creation time</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">24/7</div>
-                                    <p class="text-brand-gray-dark">Automated customer support coverage</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-3xl font-bold text-brand-yellow mb-2">500%</div>
-                                    <p class="text-brand-gray-dark">Increase in data processing speed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How We Work -->
-    <section class="section bg-brand-gray-light">
-        <div class="container">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-black mb-4">Clarity First. Systems Second. Scale Always.</h2>
-                <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
-                    Our proven methodology ensures every implementation delivers measurable results.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M12 12v9"></path><path d="M12 3v1"></path><path d="M12 21v-1"></path><path d="M4.22 10.22 5.64 11.64"></path><path d="M2.1 14.1L3.52 15.52"></path><path d="M18.36 11.64 19.78 10.22"></path><path d="M20.48 15.52 21.9 14.1"></path><path d="M10.22 4.22 11.64 5.64"></path><path d="M14.1 2.1 15.52 3.52"></path><path d="M11.64 18.36 10.22 19.78"></path><path d="M15.52 20.48 14.1 21.9"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">1. Diagnose the bottlenecks</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            We assess the gap between your goals and current infrastructure.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0-.73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">2. Design the system</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Strategy meets architecture — we map what needs to be built or reengineered.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">3. Deploy with precision</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Implementation done right. Clean, documented, and measurable.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M3 3v18h18"></path><path d="M18.7 8.3V18H6.3"></path><path d="m19 4-7 7-3-3-7 7"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">4. Enable your team</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Training, SOPs, and adoption support — because the best system is the one your team uses.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing & Packages -->
-    <section class="section bg-brand-white">
-        <div class="container">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-black mb-4">Investment & Engagement Models</h2>
-                <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
-                    Flexible engagement options designed to fit your business stage and growth objectives.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Project-Based</h3>
-                        <p class="card-description text-brand-gray-dark">
-                            Fixed-scope implementations with clear deliverables
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-4">
-                            <div class="text-3xl font-bold text-brand-black">ZAR 50K - 200K</div>
-                            <p class="text-brand-gray-dark text-sm">Depending on scope and complexity</p>
-                            <div class="space-y-2">
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Single service implementation
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    30-90 day timeline
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Training & handover included
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card border-brand-yellow relative">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <div class="bg-brand-yellow border-2 border-brand-black px-4 py-1 rounded-full">
-                            <span class="text-brand-black font-semibold text-sm">Most Popular</span>
-                        </div>
-                    </div>
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M3 3v18h18"></path><path d="M18.7 8.3V18H6.3"></path><path d="m19 4-7 7-3-3-7 7"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Growth Partnership</h3>
-                        <p class="card-description text-brand-gray-dark">
-                            Ongoing optimization and multi-service integration
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-4">
-                            <div class="text-3xl font-bold text-brand-black">ZAR 25K - 75K</div>
-                            <p class="text-brand-gray-dark text-sm">Per month, 6-12 month commitment</p>
-                            <div class="space-y-2">
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Multi-service integration
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Ongoing optimization
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Priority support
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Enterprise</h3>
-                        <p class="card-description text-brand-gray-dark">
-                            Custom solutions for complex organizations
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-4">
-                            <div class="text-3xl font-bold text-brand-black">Custom</div>
-                            <p class="text-brand-gray-dark text-sm">Tailored to your specific requirements</p>
-                            <div class="space-y-2">
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Full-scale transformation
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Dedicated team
-                                </div>
-                                <div class="flex items-center text-sm text-brand-gray-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 text-brand-yellow mr-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                                    Executive reporting
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contact-section" class="section cta-section">
-        <div class="container cta-content">
-            <h2 class="cta-title">Let's Architect Your Growth System</h2>
-            <p class="cta-subtitle">
-                Choose the area where you need the biggest lift — or bring us in across the stack.
+            <h3 class="text-2xl text-brand-black">Workflow & Systems Implementation</h3>
+            <p class="text-lg font-medium text-brand-gray-dark">
+              Build operational clarity with process design, system integration, and CRM implementation. Whether
+              you're scaling in HubSpot, Zoho, or Notion — we connect the tools to your business model.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html" class="button button-primary button-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                    Book Discovery Call
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                </a>
-                <a href="contact.html" class="button button-outline button-lg button-white-border">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M12 12v9"></path><path d="M12 3v1"></path><path d="M12 21v-1"></path><path d="M4.22 10.22 5.64 11.64"></path><path d="M2.1 14.1L3.52 15.52"></path><path d="M18.36 11.64 19.78 10.22"></path><path d="M20.48 15.52 21.9 14.1"></path><path d="M10.22 4.22 11.64 5.64"></path><path d="M14.1 2.1 15.52 3.52"></path><path d="M11.64 18.36 10.22 19.78"></path><path d="M15.52 20.48 14.1 21.9"></path></svg>
-                    Get Custom Quote
-                </a>
+          </div>
+          <div class="card-content">
+            <div class="space-y-4">
+              <p class="text-brand-gray-dark">
+                We implement and optimize tools like HubSpot, Zoho, and custom workflows to streamline your pipeline
+                and automate your operations.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  CRM setup, automation & optimization
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Workflow mapping & operations audits
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Toolstack alignment (HubSpot, Zoho, Airtable, Notion, etc.)
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Custom dashboards & reporting
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  SOPs & enablement frameworks
+                </div>
+              </div>
+              <p class="text-brand-gray-dark mt-4">
+                Ideal For: Operations leads, agency owners, founders drowning in manual processes.
+              </p>
+              <a href="services/opssync.html" class="button button-outline button-full-width mt-6">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer (Replicated from index.html) -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-logo-wrapper">
-                        <img src="logos/blackrocket-logo-footer.png" alt="Black Rocket Consult" class="footer-logo">
-                    </div>
-                    <p class="footer-text">
-                        Black Rocket Consult helps scale-minded businesses operationalize growth through systems, strategy, and
-                        AI.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="footer-heading">Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="/" class="footer-link">Home</a></li>
-                        <li><a href="about.html" class="footer-link">About</a></li>
-                        <li><a href="services.html" class="footer-link">Services</a></li>
-                        <li><a href="contact.html" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="footer-heading">Connect</h4>
-                    <a
-                        href="https://www.linkedin.com/company/black-rocket-consult/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="footer-link-social"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        LinkedIn
-                    </a>
-                </div>
+        <!-- Partnr -->
+        <div class="card">
+          <div class="card-header">
+            <div class="mb-4">
+              <img src="logos/partnr-logo.png" alt="Partnr" width="150" height="50" class="w-[150px] h-auto">
             </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Black Rocket Consult. All rights reserved.</p>
-                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <h3 class="text-2xl text-brand-black">Digital Marketing That Performs</h3>
+            <p class="text-lg font-medium text-brand-gray-dark">
+              Marketing isn't magic — it's math, messaging, and momentum. We combine sharp strategy with full-funnel
+              implementation to attract leads and convert them.
+            </p>
+          </div>
+          <div class="card-content">
+            <div class="space-y-4">
+              <p class="text-brand-gray-dark">
+                Funnels, automation, and media campaigns that actually convert — fully aligned to your internal
+                systems and processes.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Marketing strategy & offer development
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Lead generation funnels & automation
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Email marketing & CRM sequences
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Website messaging & conversion design
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Paid media (optional partnerships)
+                </div>
+              </div>
+              <p class="text-brand-gray-dark mt-4">
+                Ideal For: B2B service providers, agencies, and experts ready to scale beyond referrals.
+              </p>
+              <a href="services/partnr.html" class="button button-outline button-full-width mt-6">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
-    </footer>
 
-    <!-- Back to Top Button (Replicated from index.html) -->
-    <button id="back-to-top" class="back-to-top-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m18 15-6-6-6 6"></path></svg>
-    </button>
+        <!-- Ignite AI -->
+        <div class="card">
+          <div class="card-header">
+            <div class="mb-4">
+              <img src="logos/ignite-logo.png" alt="Ignite AI" width="150" height="50" class="w-[150px] h-auto">
+            </div>
+            <h3 class="text-2xl text-brand-black">Applied AI for Real-World Productivity</h3>
+            <p class="text-lg font-medium text-brand-gray-dark">
+              Forget shiny demos. We implement AI tools where they drive true business value — automating the
+              repetitive, accelerating the strategic, and enhancing decision-making.
+            </p>
+          </div>
+          <div class="card-content">
+            <div class="space-y-4">
+              <p class="text-brand-gray-dark">
+                From custom GPTs to AI video to intelligent automation — we build usable AI systems with measurable
+                business impact.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  AI workflow design & automation
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  ChatGPT + API use cases for ops/marketing
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Custom GPT & agent deployment
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Internal training & AI adoption strategies
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Prompt engineering & enablement assets
+                </div>
+              </div>
+              <p class="text-brand-gray-dark mt-4">
+                Ideal For: Companies wanting to integrate AI into operations and move beyond experimentation.
+              </p>
+              <a href="services/ignite.html" class="button button-outline button-full-width mt-6">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <!-- OpsSync Detailed Section -->
+  <section id="opssync-details-section" class="section bg-brand-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="space-y-6">
+            <div class="mb-4">
+              <img src="logos/opssync-logo.png" alt="OpsSync" width="200" height="60" class="w-[200px] h-auto">
+            </div>
+            <h2 class="text-4xl font-bold text-brand-black">
+              Stop Managing. Start <span class="text-brand-yellow">Systemizing</span>.
+            </h2>
+            <p class="text-xl text-brand-gray-dark leading-relaxed">
+              OpsSync transforms your business operations from reactive firefighting into proactive, scalable
+              systems that work without you.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
+                <path d="M12 12v9"></path>
+                <path d="M12 3v1"></path>
+                <path d="M12 21v-1"></path>
+                <path d="M4.22 10.22 5.64 11.64"></path>
+                <path d="M2.1 14.1L3.52 15.52"></path>
+                <path d="M18.36 11.64 19.78 10.22"></path>
+                <path d="M20.48 15.52 21.9 14.1"></path>
+                <path d="M10.22 4.22 11.64 5.64"></path>
+                <path d="M14.1 2.1 15.52 3.52"></path>
+                <path d="M11.64 18.36 10.22 19.78"></path>
+                <path d="M15.52 20.48 14.1 21.9"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">CRM & Pipeline Optimization</h3>
+                <p class="text-brand-gray-dark">
+                  We implement and optimize HubSpot, Zoho, or custom CRM solutions that actually get used by your
+                  team.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <rect width="8" height="8" x="2" y="2" rx="2"></rect>
+                <path d="M14 2h8v8h-8z"></path>
+                <path d="M14 14h8v8h-8z"></path>
+                <path d="M2 14h8v8h-8z"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Process Automation</h3>
+                <p class="text-brand-gray-dark">
+                  Eliminate manual tasks with intelligent workflows that handle everything from lead routing to
+                  client onboarding.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path d="M3 3v18h18"></path>
+                <path d="M18.7 8.3V18H6.3"></path>
+                <path d="m19 4-7 7-3-3-7 7"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Performance Dashboards</h3>
+                <p class="text-brand-gray-dark">
+                  Real-time visibility into what's working, what's not, and where your biggest opportunities lie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnr Detailed Section -->
+  <section id="partnr-details-section" class="section bg-brand-gray-light">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative order-2 lg:order-1">
+          <div class="card bg-brand-white">
+            <div class="card-header">
+              <h3 class="card-title text-brand-black">Partnr Impact</h3>
+            </div>
+            <div class="card-content">
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brand-yellow mb-2">ZAR 2M+</div>
+                  <p class="text-brand-gray-dark">Additional annual revenue generated</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brand-yellow mb-2">450%</div>
+                  <p class="text-brand-gray-dark">ROI on marketing spend</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brand-yellow mb-2">60%</div>
+                  <p class="text-brand-gray-dark">Reduction in customer acquisition cost</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-8 order-1 lg:order-2">
+          <div class="space-y-6">
+            <div class="mb-4">
+              <img src="logos/partnr-logo.png" alt="Partnr" width="200" height="60" class="w-[200px] h-auto">
+            </div>
+            <h2 class="text-4xl font-bold text-brand-black">
+              Marketing That <span class="text-brand-yellow">Actually Converts</span>.
+            </h2>
+            <p class="text-xl text-brand-gray-dark leading-relaxed">
+              Partnr builds marketing systems that integrate seamlessly with your operations, ensuring every lead
+              becomes a qualified opportunity.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path d="M3 3v18h18"></path>
+                <path d="M18.7 8.3V18H6.3"></path>
+                <path d="m19 4-7 7-3-3-7 7"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Conversion-Focused Funnels</h3>
+                <p class="text-brand-gray-dark">
+                  Landing pages, email sequences, and nurture campaigns designed to move prospects through your
+                  sales process.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Marketing Automation</h3>
+                <p class="text-brand-gray-dark">
+                  Intelligent campaigns that nurture leads, score prospects, and trigger sales actions at the right
+                  moment.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
+                <path d="M12 12v9"></path>
+                <path d="M12 3v1"></path>
+                <path d="M12 21v-1"></path>
+                <path d="M4.22 10.22 5.64 11.64"></path>
+                <path d="M2.1 14.1L3.52 15.52"></path>
+                <path d="M18.36 11.64 19.78 10.22"></path>
+                <path d="M20.48 15.52 21.9 14.1"></path>
+                <path d="M10.22 4.22 11.64 5.64"></path>
+                <path d="M14.1 2.1 15.52 3.52"></path>
+                <path d="M11.64 18.36 10.22 19.78"></path>
+                <path d="M15.52 20.48 14.1 21.9"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Performance Media</h3>
+                <p class="text-brand-gray-dark">
+                  Paid advertising that's tied to revenue metrics, not vanity metrics. Every rand spent is tracked
+                  to ROI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ignite AI Detailed Section -->
+  <section id="ignite-details-section" class="section bg-brand-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="space-y-6">
+            <div class="mb-4">
+              <img src="logos/ignite-logo.png" alt="Ignite AI" width="200" height="60" class="w-[200px] h-auto">
+            </div>
+            <h2 class="text-4xl font-bold text-brand-black">
+              AI That <span class="text-brand-yellow">Works</span>, Not Just Wows.
+            </h2>
+            <p class="text-xl text-brand-gray-dark leading-relaxed">
+              Ignite AI cuts through the hype to deliver practical AI solutions that solve real business problems
+              and generate measurable ROI.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path d="M12 8V4H8"></path>
+                <path d="M2 14h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2v-7Z"></path>
+                <path d="M22 14h-2a2 2 0 0 1-2 2v3a2 2 0 0 1 2 2h2v-7Z"></path>
+                <path d="M15 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path>
+                <path d="M9 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Custom AI Development</h3>
+                <p class="text-brand-gray-dark">
+                  Bespoke AI solutions tailored to your specific business needs, from chatbots to predictive
+                  analytics.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">AI Content & Media</h3>
+                <p class="text-brand-gray-dark">
+                  Automated content creation, AI video production, and intelligent copywriting that maintains your
+                  brand voice.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-medium">
+                  <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l-.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-brand-black mb-2">Intelligent Automation</h3>
+                <p class="text-brand-gray-dark">
+                  AI-powered workflows that make smart decisions, learn from patterns, and optimize themselves over
+                  time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="card bg-brand-gray-light">
+              <div class="card-header">
+                <h3 class="card-title text-brand-black">Ignite AI Outcomes</h3>
+              </div>
+              <div class="card-content">
+                <div class="space-y-6">
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-brand-yellow mb-2">75%</div>
+                    <p class="text-brand-gray-dark">Reduction in content creation time</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-brand-yellow mb-2">24/7</div>
+                    <p class="text-brand-gray-dark">Automated customer support coverage</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-brand-yellow mb-2">500%</div>
+                    <p class="text-brand-gray-dark">Increase in data processing speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="section bg-brand-gray-light">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-brand-black mb-4">Clarity First. Systems Second. Scale Always.</h2>
+        <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
+          Our proven methodology ensures every implementation delivers measurable results.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="card text-center">
+          <div class="card-header">
+            <div
+              class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-large">
+                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
+              <path d="M12 12v9"></path>
+              <path d="M12 3v1"></path>
+              <path d="M12 21v-1"></path>
+              <path d="M4.22 10.22 5.64 11.64"></path>
+              <path d="M2.1 14.1L3.52 15.52"></path>
+              <path d="M18.36 11.64 19.78 10.22"></path>
+              <path d="M20.48 15.52 21.9 14.1"></path>
+              <path d="M10.22 4.22 11.64 5.64"></path>
+              <path d="M14.1 2.1 15.52 3.52"></path>
+              <path d="M11.64 18.36 10.22 19.78"></path>
+              <path d="M15.52 20.48 14.1 21.9"></path>
+            </svg>
+            </div>
+            <h3 class="card-title text-brand-black">1. Diagnose the bottlenecks</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-brand-gray-dark text-sm">
+              We assess the gap between your goals and current infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-header">
+            <div
+              class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-large">
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l-.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="card-title text-brand-black">2. Design the system</h3>
+            </div>
+            <div class="card-content">
+              <p class="text-brand-gray-dark text-sm">
+                Strategy meets architecture — we map what needs to be built or reengineered.
+              </p>
+            </div>
+          </div>
+
+        <div class="card text-center">
+          <div class="card-header">
+            <div
+              class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-large">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            </div>
+            <h3 class="card-title text-brand-black">3. Deploy with precision</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-brand-gray-dark text-sm">
+              Implementation done right. Clean, documented, and measurable.
+            </p>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-header">
+            <div
+              class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-large">
+                <path d="M3 3v18h18"></path>
+              <path d="M18.7 8.3V18H6.3"></path>
+              <path d="m19 4-7 7-3-3-7 7"></path>
+            </svg>
+            </div>
+            <h3 class="card-title text-brand-black">4. Enable your team</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-brand-gray-dark text-sm">
+              Training, SOPs, and adoption support — because the best system is the one your team uses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Packages -->
+  <section class="section bg-brand-white">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-brand-black mb-4">Investment & Engagement Models</h2>
+        <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
+          Flexible engagement options designed to fit your business stage and growth objectives.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card">
+          <div class="card-header">
+            <div
+              class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-medium">
+                <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            </div>
+            <h3 class="card-title text-brand-black">Project-Based</h3>
+            <p class="card-description text-brand-gray-dark">
+              Fixed-scope implementations with clear deliverables
+            </p>
+          </div>
+          <div class="card-content">
+            <div class="space-y-4">
+              <div class="text-3xl font-bold text-brand-black">ZAR 50K - 200K</div>
+              <p class="text-brand-gray-dark text-sm">Depending on scope and complexity</p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Single service implementation
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                30-90 day timeline
+                </div>
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Training & handover included
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-brand-yellow relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <div class="bg-brand-yellow border-2 border-brand-black px-4 py-1 rounded-full">
+              <span class="text-brand-black font-semibold text-sm">Most Popular</span>
+            </div>
+          </div>
+          <div class="card-header">
+            <div
+              class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-medium">
+                <path d="M3 3v18h18"></path>
+              <path d="M18.7 8.3V18H6.3"></path>
+              <path d="m19 4-7 7-3-3-7 7"></path>
+            </svg>
+            </div>
+            <h3 class="card-title text-brand-black">Growth Partnership</h3>
+            <p class="card-description text-brand-gray-dark">
+              Ongoing optimization and multi-service integration
+            </p>
+          </div>
+          <div class="card-content">
+            <div class="space-y-4">
+              <div class="text-3xl font-bold text-brand-black">ZAR 25K - 75K</div>
+              <p class="text-brand-gray-dark text-sm">Per month, 6-12 month commitment</p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-brand-gray-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon h-4 w-4 text-brand-yellow mr-2">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Multi-service integration
+                </div>
+                <div class="flex items-center text-sm text-brand-
