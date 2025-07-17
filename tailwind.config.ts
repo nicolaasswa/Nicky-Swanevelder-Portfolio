@@ -53,9 +53,14 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "brand-gray-dark": "#1a1a1a",
-        "brand-gray-light": "#cccccc",
-        "brand-yellow": "#ffcc00",
+        // Black Rocket Brand Colors
+        brand: {
+          black: "#000000",
+          white: "#FFFFFF",
+          yellow: "#FFD500",
+          "gray-light": "#F2F2F2",
+          "gray-dark": "#1A1A1A",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -78,7 +83,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config
 
 export default config

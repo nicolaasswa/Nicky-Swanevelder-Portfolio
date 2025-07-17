@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { BackToTop } from "@/components/back-to-top"
+import { Footer } from "@/components/footer"
 import Image from "next/image"
 import {
   ArrowRight,
@@ -18,7 +19,6 @@ import {
   Users,
   Lightbulb,
   Calendar,
-  Linkedin,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -38,14 +38,12 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-brand-white">
-      {/* Navigation */}
       <Navigation />
 
       {/* Hero Section */}
       <section className="px-6 py-20 lg:py-32 pt-32">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text + Buttons */}
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-6xl font-bold text-brand-black leading-tight">
@@ -61,11 +59,13 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   className="bg-brand-yellow hover:bg-yellow-400 text-brand-black font-semibold px-8 py-4 border-2 border-brand-black"
-                  onClick={() => handleSmoothScroll("contact")}
+                  asChild
                 >
-                  <Zap className="mr-2 h-5 w-5" />
-                  Let's Map Your Growth
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <Link href="/contact">
+                    <Zap className="mr-2 h-5 w-5" />
+                    Let's Map Your Growth
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </Button>
                 <Button
                   variant="outline"
@@ -79,7 +79,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: Visual Flow Diagram */}
             <div className="relative">
               <div className="bg-brand-gray-light rounded-2xl p-8 h-96 flex items-center justify-center border-2 border-brand-black">
                 <div className="flex items-center space-x-6">
@@ -114,7 +113,6 @@ export default function HomePage() {
       <section id="services" className="px-6 py-20 bg-brand-gray-light">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
-            {/* OpsSync */}
             <Card className="border-2 border-brand-black hover:border-brand-yellow transition-all duration-300 hover:shadow-lg bg-brand-white">
               <CardHeader>
                 <div className="mb-4">
@@ -148,7 +146,6 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* Partnr */}
             <Card className="border-2 border-brand-black hover:border-brand-yellow transition-all duration-300 hover:shadow-lg bg-brand-white">
               <CardHeader>
                 <div className="mb-4">
@@ -181,7 +178,6 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* Ignite AI */}
             <Card className="border-2 border-brand-black hover:border-brand-yellow transition-all duration-300 hover:shadow-lg bg-brand-white">
               <CardHeader>
                 <div className="mb-4">
@@ -352,79 +348,18 @@ export default function HomePage() {
           <Button
             size="lg"
             className="bg-brand-yellow hover:bg-yellow-400 text-brand-black font-semibold px-8 py-4 border-2 border-brand-yellow"
+            asChild
           >
-            <Calendar className="mr-2 h-5 w-5" />
-            Book My Strategy Session
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <Link href="/contact">
+              <Calendar className="mr-2 h-5 w-5" />
+              Book My Strategy Session
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 py-12 bg-brand-gray-dark text-brand-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <div className="mb-4">
-                <Image
-                  src="/logos/blackrocket-logo-footer.png"
-                  alt="Black Rocket Consult"
-                  width={200}
-                  height={40}
-                  className="h-8 w-auto"
-                />
-              </div>
-              <p className="text-brand-gray-light">
-                Black Rocket Consult helps scale-minded businesses operationalize growth through systems, strategy, and
-                AI.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-brand-white">Navigation</h4>
-              <ul className="space-y-2 text-brand-gray-light">
-                <li>
-                  <a href="/" className="hover:text-brand-yellow transition-colors">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/services" className="hover:text-brand-yellow transition-colors">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="hover:text-brand-yellow transition-colors">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-brand-white">Connect</h4>
-              <a
-                href="https://www.linkedin.com/company/black-rocket-consult/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-brand-gray-light hover:text-brand-yellow transition-colors"
-              >
-                <Linkedin className="h-5 w-5 mr-2" />
-                LinkedIn
-              </a>
-            </div>
-          </div>
-
-          <div className="border-t border-brand-gray-light pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-brand-gray-light text-sm">© 2024 Black Rocket Consult. All rights reserved.</p>
-            <a href="/privacy" className="text-brand-gray-light hover:text-brand-yellow text-sm transition-colors">
-              Privacy Policy
-            </a>
-          </div>
-        </div>
-      </footer>
-
-      {/* Back to Top Button */}
+      <Footer />
       <BackToTop />
     </div>
   )
