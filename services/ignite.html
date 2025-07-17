@@ -1,443 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignite AI - Black Rocket Consult</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignite AI - Black Rocket Consult</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <!-- Navigation Header (Replicated from index.html, adjusted paths) -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../">
-                    <img src="../logos/blackrocket-logo.png" alt="Black Rocket Consult" class="logo-img">
-                </a>
+  <!-- Navigation Header (Replicated from index.html) -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">
+          <img src="../logos/blackrocket-logo.png" alt="Black Rocket Consult" class="logo-img">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="../services.html" class="nav-link active">Services</a>
+        <a href="../about.html" class="nav-link">About</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="cta-buttons">
+        <button class="button button-primary get-started-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+            <path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path>
+          </svg>
+          Get Started
+        </button>
+        <button class="button button-ghost menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section hero-section pt-32">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="space-y-6">
+            <div class="mb-4">
+              <img src="../logos/ignite-logo.png" alt="Ignite AI" width="200" height="60" class="w-[200px] h-auto">
             </div>
-            <div class="nav-links">
-                <a href="../services.html" class="nav-link active">Services</a>
-                <a href="../about.html" class="nav-link">About</a>
-                <a href="../contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="cta-buttons">
-                <button class="button button-primary get-started-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path></svg>
-                    Get Started
-                </button>
-                <button class="button button-ghost menu-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="section hero-section pt-32 bg-brand-white">
-        <div class="container">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="space-y-6">
-                        <h1 class="text-5xl lg:text-6xl font-bold text-brand-black leading-tight">
-                            Ignite AI: Practical AI for <span class="text-brand-yellow">Real Business Impact</span>.
-                        </h1>
-                        <p class="text-xl text-brand-gray-dark leading-relaxed">
-                            Cut through the hype. We deliver practical AI solutions that solve real business problems, automate
-                            tasks, and generate measurable ROI.
-                        </p>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button
-                            class="button button-primary button-lg"
-                            data-scroll-to="contact-cta-section"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                            Discover Your AI Advantage
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                        </button>
-                        <button
-                            class="button button-outline button-lg"
-                            data-scroll-to="features-section"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
-                            Explore Features
-                        </button>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="bg-brand-gray-light rounded-2xl p-8 h-96 flex items-center justify-center border-2 border-brand-black">
-                        <img
-                            src="../logos/ignite-logo.png"
-                            alt="Ignite AI Logo"
-                            width="300"
-                            height="100"
-                            class="w-[300px] h-auto"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problem & Solution -->
-    <section class="section bg-brand-gray-light">
-        <div class="container">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <h2 class="text-4xl font-bold text-brand-black">Is AI Just a Buzzword, Not a Business Tool?</h2>
-                    <p class="text-xl text-brand-gray-dark">
-                        Many companies are curious about AI but struggle to move beyond experimentation to real-world
-                        implementation. You need practical applications, not just flashy demos.
-                    </p>
-                    <ul class="space-y-3 text-brand-gray-dark text-lg">
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Unclear ROI from AI investments.
-                        </li>
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Difficulty integrating AI tools into existing workflows.
-                        </li>
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Lack of internal expertise to build and manage AI solutions.
-                        </li>
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Overwhelmed by the sheer volume of AI tools and options.
-                        </li>
-                    </ul>
-                </div>
-                <div class="space-y-6">
-                    <h2 class="text-4xl font-bold text-brand-black">
-                        Ignite AI: Your Partner for Actionable AI Solutions.
-                    </h2>
-                    <p class="text-xl text-brand-gray-dark">
-                        We cut through the hype to deliver practical AI solutions that solve real business problems and generate
-                        measurable ROI, seamlessly integrating into your operations.
-                    </p>
-                    <ul class="space-y-3 text-brand-gray-dark text-lg">
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Custom AI tools tailored to your specific business needs.
-                        </li>
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            AI-powered automation that frees up your team for strategic work.
-                        </li>
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Enhanced decision-making through intelligent data analysis.
-                        </li>
-                        <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-5 w-5 text-brand-yellow mr-3 flex-shrink-0"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                            Clear adoption strategies and training for your team.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features-section" class="section bg-brand-white">
-        <div class="container">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-black mb-4">What Ignite AI Delivers</h2>
-                <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
-                    Practical AI applications designed to boost productivity, automate tasks, and drive real business value.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12 8V4H8"></path><path d="M2 14h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2v-7Z"></path><path d="M22 14h-2a2 2 0 0 1-2 2v3a2 2 0 0 1 2 2h2v-7Z"></path><path d="M15 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path><path d="M9 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Custom AI Development</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Bespoke AI solutions tailored to your specific business needs, from intelligent chatbots to predictive
-                            analytics models.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">AI Content & Media</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Automated content creation, AI video production, and intelligent copywriting that maintains your brand
-                            voice and scales your output.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0-.73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Intelligent Automation</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            AI-powered workflows that make smart decisions, learn from patterns, and optimize themselves over
-                            time, reducing manual effort.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Internal Training & Adoption</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Comprehensive training programs and adoption strategies to ensure your team confidently integrates AI
-                            into their daily tasks.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">Prompt Engineering & Assets</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Develop optimized prompts and reusable AI assets to maximize the effectiveness and consistency of your
-                            AI tools.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-medium"><path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">ChatGPT + API Use Cases</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Identify and implement practical applications of large language models for your operations and
-                            marketing needs.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How We Work -->
-    <section class="section bg-brand-gray-light">
-        <div class="container">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-black mb-4">Our Ignite AI Implementation Process</h2>
-                <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
-                    A structured approach to integrating AI for measurable business impact.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M12 12v9"></path><path d="M12 3v1"></path><path d="M12 21v-1"></path><path d="M4.22 10.22 5.64 11.64"></path><path d="M2.1 14.1L3.52 15.52"></path><path d="M18.36 11.64 19.78 10.22"></path><path d="M20.48 15.52 21.9 14.1"></path><path d="M10.22 4.22 11.64 5.64"></path><path d="M14.1 2.1 15.52 3.52"></path><path d="M11.64 18.36 10.22 19.78"></path><path d="M15.52 20.48 14.1 21.9"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">1. Identify Opportunities</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            We pinpoint where AI can deliver the most significant ROI for your specific business challenges.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0-.73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">2. Prototype & Design</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Develop and test AI prototypes, designing solutions that integrate seamlessly with your existing
-                            systems.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M13 2L3 14h9l-10 8 20-12h-9l10-8z"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">3. Deploy & Integrate</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Implement the AI solutions, ensuring they are robust, scalable, and fully integrated into your
-                            workflows.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class="w-16 h-16 bg-brand-yellow border-2 border-brand-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-large"><path d="M3 3v18h18"></path><path d="M18.7 8.3V18H6.3"></path><path d="m19 4-7 7-3-3-7 7"></path></svg>
-                        </div>
-                        <h3 class="card-title text-brand-black">4. Monitor & Optimize</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="text-brand-gray-dark text-sm">
-                            Continuously monitor AI performance, gather feedback, and optimize for ongoing efficiency and impact.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials/Results -->
-    <section class="section bg-brand-white">
-        <div class="container">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-brand-black mb-4">Ignite AI: Measurable AI Outcomes</h2>
-                <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
-                    Real-world impact from practical AI implementations.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card">
-                    <div class="card-content card-padding">
-                        <div class="mb-6">
-                            <div class="star-rating">★★★★★</div>
-                            <blockquote class="blockquote">
-                                "From CRM to AI copilots, every solution was usable, documented, and adopted fast."
-                            </blockquote>
-                            <cite class="cite">— COO, Tech-Enabled Services Firm</cite>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content card-padding">
-                        <div class="mb-6">
-                            <div class="text-3xl font-bold text-brand-yellow mb-2">75%</div>
-                            <h3 class="font-semibold text-brand-black mb-3">Reduction in content creation time</h3>
-                            <p class="text-brand-gray-dark text-sm">
-                                A marketing agency used Ignite AI to automate content generation, saving 75% of their time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contact-cta-section" class="section cta-section">
-        <div class="container cta-content">
-            <h2 class="cta-title">Ready to Unlock Your AI Advantage?</h2>
-            <p class="cta-subtitle">
-                Book a discovery session with our Ignite AI experts and let's identify practical AI solutions for your
-                business.
+            <h1 class="text-5xl lg:text-6xl font-bold text-brand-black leading-tight">
+              AI That <span class="text-yellow">Works</span>, Not Just Wows.
+            </h1>
+            <p class="text-xl text-brand-gray-dark leading-relaxed">
+              Ignite AI cuts through the hype to deliver practical AI solutions that solve real business problems
+              and generate measurable ROI.
             </p>
-            <a href="../contact.html" class="button button-primary button-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-                Book My AI Session
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="button button-primary button-lg" data-scroll-to="contact-section">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                <line x1="16" x2="16" y1="2" y2="6"></line>
+                <line x1="8" x2="8" y1="2" y2="6"></line>
+                <line x1="3" x2="21" y1="10" y2="10"></line>
+              </svg>
+              Book AI Strategy Call
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+            <button class="button button-outline button-lg" data-scroll-to="services-section">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path>
+                <path d="M12 12v9"></path>
+                <path d="M12 3v1"></path>
+                <path d="M12 21v-1"></path>
+                <path d="M4.22 10.22 5.64 11.64"></path>
+                <path d="M2.1 14.1L3.52 15.52"></path>
+                <path d="M18.36 11.64 19.78 10.22"></path>
+                <path d="M20.48 15.52 21.9 14.1"></path>
+                <path d="M10.22 4.22 11.64 5.64"></path>
+                <path d="M14.1 2.1 15.52 3.52"></path>
+                <path d="M11.64 18.36 10.22 19.78"></path>
+                <path d="M15.52 20.48 14.1 21.9"></path>
+              </svg>
+              Explore AI Services
+            </button>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer (Replicated from index.html, adjusted paths) -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-logo-wrapper">
-                        <img src="../logos/blackrocket-logo-footer.png" alt="Black Rocket Consult" class="footer-logo">
-                    </div>
-                    <p class="footer-text">
-                        Black Rocket Consult helps scale-minded businesses operationalize growth through systems, strategy, and
-                        AI.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="footer-heading">Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="../" class="footer-link">Home</a></li>
-                        <li><a href="../about.html" class="footer-link">About</a></li>
-                        <li><a href="../services.html" class="footer-link">Services</a></li>
-                        <li><a href="../contact.html" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="footer-heading">Connect</h4>
-                    <div class="space-y-2">
-                        <a
-                            href="mailto:hello@blackrocket.co.za"
-                            class="block text-brand-gray-light hover:text-brand-yellow transition-colors"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 inline mr-2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                            hello@blackrocket.co.za
-                        </a>
-                        <a
-                            href="tel:+27726992437"
-                            class="block text-brand-gray-light hover:text-brand-yellow transition-colors"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 inline mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            +27 72 699 2437
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/company/black-rocket-consult/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="block text-brand-gray-light hover:text-brand-yellow transition-colors"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon h-4 w-4 inline mr-2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                            LinkedIn
-                        </a>
-                    </div>
-                </div>
+        <div class="relative">
+          <div class="card bg-brand-gray-light">
+            <div class="card-header">
+              <h3 class="card-title text-brand-black">Ignite AI Outcomes</h3>
             </div>
-
-            <div class="border-t border-brand-gray-light pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-brand-gray-light text-sm">© 2024 Black Rocket Consult. All rights reserved.</p>
-                <a href="../privacy.html" class="text-brand-gray-light hover:text-brand-yellow text-sm transition-colors">
-                    Privacy Policy
-                </a>
+            <div class="card-content">
+              <div class="space-y-6">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brand-yellow mb-2">75%</div>
+                  <p class="text-brand-gray-dark">Reduction in content creation time</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brand-yellow mb-2">24/7</div>
+                  <p class="text-brand-gray-dark">Automated customer support coverage</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brand-yellow mb-2">500%</div>
+                  <p class="text-brand-gray-dark">Increase in data processing speed</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- Back to Top Button (Replicated from index.html) -->
-    <button id="back-to-top" class="back-to-top-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m18 15-6-6-6 6"></path></svg>
-    </button>
+  <!-- Services Section -->
+  <section id="services-section" class="section bg-brand-white">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-brand-black mb-4">Our AI Services</h2>
+        <p class="text-xl text-brand-gray-dark max-w-3xl mx-auto">
+          We offer a range of AI services designed to meet your specific business needs.
+        </p>
+      </div>
 
-    <script src="../script.js"></script>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card">
+          <div class="card-header">
+            <div
+              class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-medium">
+                <path d="M12 8V4H8"></path>
+                <path d="M2 14h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2v-7Z"></path>
+                <path d="M22 14h-2a2 2 0 0 1-2 2v3a2 2 0 0 1 2 2h2v-7Z"></path>
+                <path d="M15 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path>
+                <path d="M9 14h1c.8 0 1.5.3 2 .9l2.5 2.5c.6.6.9 1.3.9 2.1V21h-7v-7Z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-brand-black">Custom AI Development</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-brand-gray-dark">
+              Bespoke AI solutions tailored to your specific business needs, from chatbots to predictive
+              analytics.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div
+              class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-medium">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-brand-black">AI Content & Media</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-brand-gray-dark">
+              Automated content creation, AI video production, and intelligent copywriting that maintains your
+              brand voice.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div
+              class="w-12 h-12 bg-brand-yellow border-2 border-brand-black rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-medium">
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l-.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="card-title text-brand-black">Intelligent Automation</h3>
+          </div>
+          <div class="card-content">
+            <p class="text-brand-gray-dark">
+              AI-powered workflows that make smart decisions, learn from patterns, and optimize themselves over
+              time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact-section" class="section cta-section">
+    <div class="container cta-content">
+      <h2 class="cta-title">Ready to Ignite Your Business with AI?</h2>
+      <p class="cta-subtitle">
+        Book a discovery session and let's identify how AI can drive growth in your business.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="../contact.html" class="button button-primary button-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+            <line x1="16" x2="16" y1="2" y2="6"></line>
+            <line x1="8" x2="8" y1="2" y2="6"></line>
+            <line x1="3" x2="21" y1="10" y2="10"></line>
+          </svg>
+          Book My AI Strategy Session
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon ml-2">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Replicated from index.html) -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-wrapper">
+            <img src="../logos/blackrocket-logo-footer.png" alt="Black Rocket Consult" class="footer-logo">
+          </div>
+          <p class="footer-text">
+            Black Rocket Consult helps scale-minded businesses operationalize growth through systems, strategy, and
+            AI.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="../about.html" class="footer-link">About</a></li>
+            <li><a href="../services.html" class="footer-link">Services</a></li>
+            <li><a href="../contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <a href="https://www.linkedin.com/company/black-rocket-consult/" target="_blank" rel="noopener noreferrer"
+            class="footer-link-social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon mr-2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 Black Rocket Consult. All rights reserved.</p>
+        <a href="../privacy.html" class="footer-link">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button (Replicated from index.html) -->
+  <button id="back-to-top" class="back-to-top-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+      <path d="m18 15-6-6-6 6"></path>
+    </svg>
+  </button>
+
+  <script src="../script.js"></script>
 </body>
+
 </html>
